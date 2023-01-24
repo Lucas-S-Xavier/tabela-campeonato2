@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: #06AA48;
+}
+
+header h1 {
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    padding: 10px;
+}
+
+header div {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.137);
+}
+
+menu ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.726);
+    font-weight: bold;
+}
+
+menu ul li {
+    padding: 15px 15px 20px 15px;
+}
+
+menu ul li:hover {
+    color: rgba(0, 0, 0, 0.705);
+    border-bottom: solid 2px black;
+    cursor: pointer;
+    transition: .5s;
+}
+
+main h1 {
+    margin: 25px;
+    font-weight: 400;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, th {
+    border: solid 1px black;
+    padding: 10px;
+}
+
+col.cinza {
+    background-color: rgba(211, 211, 211, 0.603);
+}
+
+div.rodadas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span.seta-esquerda {
+    color: #058538;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+span.seta-esquerda:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div.rodadas p {
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+span.seta-direita {
+    color: #058538;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+span.seta-direita:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div.linha {
+    height: 3px;
+    background-color: green;
+}
+
+div.estilo-das-rodadas {
+    width: 100%;
+    position: relative;
+}
+
+div.estilos {
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.estilos p {
+    font-size: 1.3em;
+}
+
+.p-left {
+    color: rgba(0, 0, 0, 0.61);
+    padding: 20px;
+}
+
+
+.p-meio {
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.p-right {
+    color: rgba(0, 0, 0, 0.61);
+    padding: 20px;
+}
+
+.p-guandu {
+    padding: 15px;
+}
+
+.p-milan {
+    padding: 19px;
+}
+
+#segunda_rodada {
+    display: none;
+}
+
+
+.presente-ou-nao {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.presente-ou-nao p {
+    display: inline-block;
+    margin: 10px;
+    font-size: 0.8em;
+}
+
+.simbolo-check {
+    color: green;
+}
+
+.simbolo-cancel {
+    color: rgb(194, 0, 0);
+}
+

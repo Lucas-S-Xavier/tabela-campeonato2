@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Campeonato</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Campeonato FJU</h1>
+        <div></div> <!--Linha-->
+        <menu>
+            <ul>
+                <li>Classificação</li>
+                <li>Regras</li>
+                <li>Sobre</li>
+                <li>FJU</li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+
+        <h1>Tabela</h1>
+
+        <table>
+            <colgroup>
+                <col class="cinza">
+                <col>
+                <col class="cinza">
+                <col>
+                <col class="cinza">
+                <col>
+                <col class="cinza">
+                <col>
+                <col class="cinza">
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>P</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>G</th>
+                    <th>GS</th>
+                    <th>SG</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tropa do Urso</td>
+                    <td>3</td> <!--Pontos-->
+                    <td>1</td> <!--Jogos-->
+                    <td>1</td> <!--Vitorias-->
+                    <td>0</td> <!--Empates-->
+                    <td>0</td> <!--Derrotas-->
+                    <td>2</td> <!--Gols-->
+                    <td>1</td> <!--Gols Sofridos-->
+                    <td>1</td> <!--Saldo de Gols-->
+                </tr>
+                <tr>
+                    <td>Quafa</td>
+                    <td>3</td> <!--Pontos-->
+                    <td>1</td> <!--Jogos-->
+                    <td>1</td> <!--Vitorias-->
+                    <td>0</td> <!--Empates-->
+                    <td>0</td> <!--Derrotas-->
+                    <td>1</td> <!--Gols-->
+                    <td>0</td> <!--Gols Sofridos-->
+                    <td>1</td> <!--Saldo de Gols-->
+                </tr>
+                <tr>
+                    <td>Milan</td>
+                    <td>3</td> <!--Pontos-->
+                    <td>1</td> <!--Jogos-->
+                    <td>0</td> <!--Vitorias-->
+                    <td>1</td> <!--Empates-->
+                    <td>0</td> <!--Derrotas-->
+                    <td>1</td> <!--Gols-->
+                    <td>1</td> <!--Gols Sofridos-->
+                    <td>0</td> <!--Saldo de Gols-->
+                </tr>
+                <tr>
+                    <td>Tropa do ZL</td>
+                    <td>3</td> <!--Pontos-->
+                    <td>1</td> <!--Jogos-->
+                    <td>0</td> <!--Vitorias-->
+                    <td>1</td> <!--Empates-->
+                    <td>0</td> <!--Derrotas-->
+                    <td>1</td> <!--Gols-->
+                    <td>1</td> <!--Gols Sofridos-->
+                    <td>0</td> <!--Saldo de Gols-->
+                </tr>
+                <tr>
+                    <td>Fla-lomão</td>
+                    <td>2</td> <!--Pontos-->
+                    <td>1</td> <!--Jogos-->
+                    <td>0</td> <!--Vitorias-->
+                    <td>0</td> <!--Empates-->
+                    <td>1</td> <!--Derrotas-->
+                    <td>1</td> <!--Gols-->
+                    <td>2</td> <!--Gols Sofridos-->
+                    <td>-1</td> <!--Saldo de Gols-->
+                </tr>
+                <tr>
+                    <td>Guandu</td>
+                    <td>0</td> <!--Pontos-->
+                    <td>1</td> <!--Jogos-->
+                    <td>0</td> <!--Vitorias-->
+                    <td>0</td> <!--Empates-->
+                    <td>1</td> <!--Derrotas-->
+                    <td>0</td> <!--Gols-->
+                    <td>1</td> <!--Gols Sofridos-->
+                    <td>-1</td> <!--Saldo de Gols-->
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>Jogos</h1>
+
+        <hr>
+
+        <div class="rodadas">
+            <span class="seta-esquerda" onclick="clickEsquerda()"> << </span> 
+            <p>1° Rodada</p> 
+            <span class="seta-direita" onclick="clickDireita()"> >> </span>
+        </div>
+
+        <div class="linha"></div>
+        
+        <div id="primeira_rodada"> <!--Primeira Rodada-->
+            
+            <div class="estilo-das-rodadas">
+                
+                <div class="estilos">
+                    <p class="p-left p-milan">MLN</p>   
+                    <span class="material-symbols-outlined simbolo-check">check_circle</span> 
+                    <p class="p-meio">1 x 1</p> 
+                    <span class="material-symbols-outlined simbolo-check">check_circle</span> 
+                    <p class="p-right">TZL</p>
+                </div>
+
+                <hr>
+
+                <div class="estilos">
+                    <p class="p-left">TDU</p> 
+                    <span class="material-symbols-outlined simbolo-cancel">cancel</span> 
+                    <p class="p-meio">2 x 1</p> 
+                    <span class="material-symbols-outlined simbolo-check">check_circle</span> 
+                    <p class="p-right">FLA</p>
+                </div>
+
+                <hr>
+
+                <div class="estilos">
+                    <p class="p-left">QUF</p> 
+                    <span class="material-symbols-outlined simbolo-cancel">cancel</span> 
+                    <p class="p-meio">1 x 0</p> 
+                    <span class="material-symbols-outlined simbolo-cancel">cancel</span> 
+                    <p class="p-right p-guandu">GND</p>
+                </div>
+                
+            </div> <!--Div só para estilização -->
+
+        </div> <!--primeira-rodada-->
+        
+
+        <div id="segunda_rodada">  <!--Segunda Rodada -->
+
+            <div class="estilo-das-rodadas">
+            
+                <div class="estilos">
+                    <p class="p-left p-milan">EXEMPLO</p>   
+                    <span class="material-symbols-outlined simbolo-check">check_circle</span> 
+                    <p class="p-meio">0 x 0</p> 
+                    <span class="material-symbols-outlined simbolo-check">check_circle</span> 
+                    <p class="p-right">EXEMPLO</p>
+                </div>
+
+                <hr>
+
+                <div class="estilos">
+                    <p class="p-left">EXEMPLO</p> 
+                    <span class="material-symbols-outlined simbolo-cancel">cancel</span> 
+                    <p class="p-meio">0 x 0</p> 
+                    <span class="material-symbols-outlined simbolo-check">check_circle</span> 
+                    <p class="p-right">EXEMPLO</p>
+                </div>
+
+                <hr>
+
+                <div class="estilos">
+                    <p class="p-left">EXEMPLO</p> 
+                    <span class="material-symbols-outlined simbolo-cancel">cancel</span> 
+                    <p class="p-meio">0 x 0</p> 
+                    <span class="material-symbols-outlined simbolo-cancel">cancel</span> 
+                    <p class="p-right p-guandu">EXEMPLO</p>
+                </div>
+            </div>
+        </div>  <!--Segunda Rodada -->
+
+
+        <div class="presente-ou-nao">
+            <span class="material-symbols-outlined simbolo-check">check_circle</span> 
+            <p>Presente no Encontro Jovem</p> 
+            <br>
+            <span class="material-symbols-outlined simbolo-cancel">cancel</span> 
+            <p>Não esteve presente no Encontro Jovem</p>
+        </div>
+
+    </main>
+
+    <script src="codigo/script.js"></script>
+</body>
+</html>
