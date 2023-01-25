@@ -116,6 +116,7 @@ div.estilos {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 div.time-left {
@@ -140,6 +141,16 @@ div.time-left img {
 
 div.time-right img {
     width: 65px;
+}
+
+div.estilos span.simbolo-left {
+    position: absolute;
+    left: 150px;
+}
+
+div.estilos span.simbolo-right {
+    position: absolute;
+    left: 270px;
 }
 
 div.estilos p {
