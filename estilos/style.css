@@ -124,6 +124,7 @@ div.estilos {
 
 div.time-left {
     position: relative;
+    width: 100px;
 }
 
 div.time-left .time {
@@ -135,6 +136,7 @@ div.time-left img {
     width: 70px;
     position: absolute;
     top: -23px;
+    left: 45px;
 }
 
 div.time-left .simbolo {
@@ -146,10 +148,14 @@ div.time-left .simbolo {
 div.placar-meio {
     font-size: 1.4em;
     font-weight: bold;
+    width: 100px;
+    text-align: center;
 }
 
 div.time-right {
     position: relative;
+    width: 100px;
+    text-align: right;
 }
 
 div.time-right .simbolo {
@@ -161,7 +167,7 @@ div.time-right .simbolo {
 div.time-right img {
     width: 70px;
     position: absolute;
-    right: 33px;
+    right: 40px;
     top: -23px;
 }
 
@@ -174,7 +180,7 @@ div.time-right .time {
 /* Arrumar jogos */
 
 
-#segunda_rodada {
+#segunda-rodada {
     display: none;
 }
 
