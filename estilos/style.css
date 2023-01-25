@@ -6,9 +6,11 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 100vh;
+    width: 100vw;
+    position: relative;
 
 }
 
@@ -111,72 +113,65 @@ div.linha {
     background-color: green;
 }
 
-div.estilos {
-    font-family: Arial, Helvetica, sans-serif;
+/* Arrumar jogos */
 
+div.estilos {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
+    padding: 20px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.247);
 }
 
 div.time-left {
-    display: flex;
-    justify-content: flex-start;
-    width: 110px;
     position: relative;
 }
 
-div.time-right {
-    display: flex;
-    width: 110px;
-    justify-content: flex-end;
+div.time-left .time {
+    font-size: 1.4em;
+    color: rgba(0, 0, 0, 0.671);
 }
 
 div.time-left img {
-    width: 80px;
+    width: 70px;
     position: absolute;
-    top: -10px;
-    left: 60px;
+    top: -23px;
+}
+
+div.time-left .simbolo {
+    position: absolute;
+    left: 120px;
+    top: 5px;
+}
+
+div.placar-meio {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+div.time-right {
+    position: relative;
+}
+
+div.time-right .simbolo {
+    position: absolute;
+    right: 110px;
+    top: 5px;
 }
 
 div.time-right img {
-    width: 65px;
-}
-
-div.estilos span.simbolo-left {
+    width: 70px;
     position: absolute;
-    left: 150px;
+    right: 33px;
+    top: -23px;
 }
 
-div.estilos span.simbolo-right {
-    position: absolute;
-    left: 270px;
+div.time-right .time {
+    font-size: 1.4em;
+    color: rgba(0, 0, 0, 0.671);
 }
 
-div.estilos p {
-    font-size: 1.3em;
-}
 
-.p-left {
-    color: rgba(0, 0, 0, 0.61);
-    padding: 20px 0px 20px 20px;
-}
-
-.p-meio {
-    font-weight: bold;
-    color: black;
-    padding: 20px;
-
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.p-right {
-    color: rgba(0, 0, 0, 0.61);
-    padding: 20px 20px 20px 0px;
-}
+/* Arrumar jogos */
 
 
 #segunda_rodada {
