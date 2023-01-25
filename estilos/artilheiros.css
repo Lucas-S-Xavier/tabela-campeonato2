@@ -57,6 +57,10 @@ div.pessoa-e-time img {
     border-radius: 50%;
 }
 
+div.pessoa-e-time .logo-time {
+    width: 35px;
+}
+
 div.gols p {
     font-size: 28px;
     font-weight: bold;
