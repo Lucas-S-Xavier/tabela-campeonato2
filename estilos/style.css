@@ -61,6 +61,7 @@ main h1 {
 table {
     border-collapse: collapse;
     width: 100%;
+    margin-bottom: 80px;
 }
 
 table td, th {
