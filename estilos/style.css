@@ -30,15 +30,17 @@ menu ul {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
+}
+
+menu ul li a {
+    padding: 15px 15px 20px 15px;
+    display: inline-block;
     color: rgba(255, 255, 255, 0.726);
     font-weight: bold;
+    text-decoration: none;
 }
 
-menu ul li {
-    padding: 15px 15px 20px 15px;
-}
-
-menu ul li:hover {
+menu ul li a:hover {
     color: rgba(0, 0, 0, 0.705);
     border-bottom: solid 2px black;
     cursor: pointer;
@@ -177,4 +179,19 @@ div.estilos p {
 .simbolo-cancel {
     color: rgb(194, 0, 0);
 }
+
+footer {
+    background-color: #06AA48;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+footer img {
+    width: 60px;
+}
+
+
+
+
 

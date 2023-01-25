@@ -1,5 +1,7 @@
 var primeira_rodada = document.getElementById ('primeira_rodada')
 var segunda_rodada = document.getElementById ('segunda_rodada')
+var conteudo_regras = document.getElementById ('regras')
+var conteudo_classificacao = document.getElementById ('classificacao')
 
 function clickDireita() {
     if (segunda_rodada.style.display = 'none') {

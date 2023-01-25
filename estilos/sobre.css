@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+
+body, html {
+    background-color: lightgray;
+}
+
+.conteudo {
+    width: 300px;
+    background-color: #06AA48;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px  white;
+    position: relative;
+}
+
+.conteudo p {
+    margin: 20px 0;
+}
+
+.conteudo span {
+    font-weight: bold;
+}
+
+.conteudo img {
+    width: 30px;
+    position: absolute;
+    left: 230px;
+}
+
