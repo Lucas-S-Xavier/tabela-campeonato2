@@ -110,11 +110,6 @@ div.linha {
     background-color: green;
 }
 
-div.estilo-das-rodadas {
-    width: 100%;
-    position: relative;
-}
-
 div.estilos {
     font-family: Arial, Helvetica, sans-serif;
 
@@ -123,15 +118,38 @@ div.estilos {
     align-items: center;
 }
 
+div.time-left {
+    display: flex;
+    justify-content: flex-start;
+    width: 110px;
+    position: relative;
+}
+
+div.time-right {
+    display: flex;
+    width: 110px;
+    justify-content: flex-end;
+}
+
+div.time-left img {
+    width: 80px;
+    position: absolute;
+    top: -10px;
+    left: 60px;
+}
+
+div.time-right img {
+    width: 65px;
+}
+
 div.estilos p {
     font-size: 1.3em;
 }
 
 .p-left {
     color: rgba(0, 0, 0, 0.61);
-    padding: 20px;
+    padding: 20px 0px 20px 20px;
 }
-
 
 .p-meio {
     font-weight: bold;
@@ -145,16 +163,9 @@ div.estilos p {
 
 .p-right {
     color: rgba(0, 0, 0, 0.61);
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
 }
 
-.p-guandu {
-    padding: 15px;
-}
-
-.p-milan {
-    padding: 19px;
-}
 
 #segunda_rodada {
     display: none;
