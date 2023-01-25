@@ -2,11 +2,12 @@
 
 body,html {
     background-color: lightgray;
+
 }
 
 .conteudo {
     background-color: #06AA48;
-    width: 65vw;
+    width: 300px;
     margin: auto;
     padding: 20px;
     border-radius: 20px;
