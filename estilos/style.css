@@ -214,7 +214,7 @@ div.time-right .time {
 
 /* Arrumar jogos */
 
-
+#primeira-rodada {display: block;}
 #segunda-rodada {display: none;}
 #terceira-rodada {display: none;}
 #quarta-rodada {display: none;}
