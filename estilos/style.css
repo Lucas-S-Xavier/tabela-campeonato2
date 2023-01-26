@@ -215,9 +215,9 @@ div.time-right .time {
 /* Arrumar jogos */
 
 
-#segunda-rodada {
-    display: none;
-}
+#segunda-rodada {display: none;}
+#terceira-rodada {display: none;}
+#quarta-rodada {display: none;}
 
 
 .presente-ou-nao {
