@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 640px) {
+    main {
+        width: 80vw;
+        margin: auto;
+
+    }
+
+    section#tabela-e-jogos h1 {
+        margin: 25px 25px 25px 0px;
+    }
+
+    main h1 {
+        margin: 25px 25px 25px 0px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        width: 90vw;
+    }
+
+    table {
+        width: 550px;
+        height: 565px;
+    }
+
+    section#tabela-e-jogos {
+        display: flex;
+        width: 900px;
+        margin: 35px auto 0px auto;
+    }
+
+    section#tabela-e-jogos h1 {
+        margin: 0px 25px 25px 0px;
+    }
+
+    div.linha-tabela-jogos {
+        height: 623px;
+        width: 1px;
+        margin: 10px 20px 0px 20px;
+        background-color: rgba(0, 0, 0, 0.171);
+    }
+
+    #primeira-rodada {width: 300px;}
+    #segunda-rodada {width: 300px;}
+    #terceira-rodada {width: 300px;}
+    #quarta-rodada {width: 300px;}
+
+    div.estilos {
+        width: 300px;
+        margin-bottom: 5px;
+    }
+
+    /* Time LEFT */
+
+    div.time-left img.logo-exemplo {
+        width: 50px;
+        position: absolute;
+        top: -10px;
+        left: 50px;
+    }
+
+    div.time-left img {
+        width: 70px;
+        position: absolute;
+        top: -23px;
+        left: 42px;
+    }
+
+    div.time-left .simbolo {
+        left: 40px;
+        top: 40px;
+    }
+
+    /* Time Right */
+
+    div.time-right img.logo-exemplo {
+        width: 50px;
+        position: absolute;
+        top: -10px;
+        right: 50px;
+    }
+
+    div.time-right img {
+        width: 70px;
+        position: absolute;
+        right: 40px;
+        top: -23px;
+    }
+
+    div.time-right .simbolo {
+        left: 40px;
+        top: 40px;
+    }
+
+    section#artilheiros {
+        width: 900px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    main {
+        width: 90vw;
+    }
+
+    section#tabela {
+        width: 60%;
+    }
+
+    table {
+        width: 100%;
+        height: 565px;
+    }
+
+    section#tabela-e-jogos {
+        display: flex;
+        width: 90%;
+        margin: 35px auto 0px auto;
+    }
+
+    section#tabela-e-jogos h1 {
+        margin: 0px 25px 25px 0px;
+    }
+
+    div.linha-tabela-jogos {
+        height: 623px;
+        width: 1px;
+        margin: 10px 20px 0px 20px;
+        background-color: rgba(0, 0, 0, 0.171);
+    }
+
+    section#jogos {
+        width: 40%;
+    }
+
+    #primeira-rodada {width: 100%;}
+    #segunda-rodada {width: 100%;}
+    #terceira-rodada {width: 100%;}
+    #quarta-rodada {width: 100%;}
+
+    div.estilos {
+        min-width: 350px;
+
+        margin-bottom: 5%;
+    }
+
+    div.time-left img.logo-exemplo {
+        width: 50px;
+        position: absolute;
+        top: -10px;
+        left: 50px;
+    }
+
+    div.time-left img {
+        width: 70px;
+        position: absolute;
+        top: -23px;
+        left: 42px;
+    }
+
+    div.time-left .simbolo {
+        left: 40%;
+        top: 170%;
+    }
+
+    /* Time Right */
+
+    div.time-right img.logo-exemplo {
+        width: 50px;
+        position: absolute;
+        top: -10px;
+        right: 50px;
+    }
+
+    div.time-right img {
+        width: 70px;
+        position: absolute;
+        right: 40px;
+        top: -23px;
+    }
+
+    div.time-right .simbolo {
+        left: 40%;
+        top: 170%;
+    }
+
+    section#artilheiros {
+        width: 90%;
+    }
+}

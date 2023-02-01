@@ -7,6 +7,7 @@
     <title>Tabela Campeonato</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
 <body>
 
@@ -25,412 +26,498 @@
 
     <main>
 
-        <h1>Tabela</h1>
-
-        <table>
-            <colgroup>
-                <col class="times">
-                <col class="cinza">
-                <col >
-                <col class="cinza">
-                <col >
-                <col class="cinza">
-                <col >
-                <col class="cinza">
-                <col >
-            </colgroup>
-
-            <thead>
-                <tr>
-                    <th>TIMES</th>
-                    <th>P</th>
-                    <th>J</th>
-                    <th>V</th>
-                    <th>E</th>
-                    <th>D</th>
-                    <th>G</th>
-                    <th>GS</th>
-                    <th>SG</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Tropa do Urso</td>
-                    <td class="pontos">5</td> <!--Pontos-->
-                    <td>1</td> <!--Jogos-->
-                    <td>1</td> <!--Vitorias-->
-                    <td>0</td> <!--Empates-->
-                    <td>0</td> <!--Derrotas-->
-                    <td>2</td> <!--Gols-->
-                    <td>1</td> <!--Gols Sofridos-->
-                    <td>1</td> <!--Saldo de Gols-->
-                </tr>
-                <tr>
-                    <td>Quafa</td>
-                    <td class="pontos">3</td> <!--Pontos-->
-                    <td>1</td> <!--Jogos-->
-                    <td>1</td> <!--Vitorias-->
-                    <td>0</td> <!--Empates-->
-                    <td>0</td> <!--Derrotas-->
-                    <td>1</td> <!--Gols-->
-                    <td>0</td> <!--Gols Sofridos-->
-                    <td>1</td> <!--Saldo de Gols-->
-                </tr>
-                <tr>
-                    <td>Milan</td>
-                    <td class="pontos">3</td> <!--Pontos-->
-                    <td>1</td> <!--Jogos-->
-                    <td>0</td> <!--Vitorias-->
-                    <td>1</td> <!--Empates-->
-                    <td>0</td> <!--Derrotas-->
-                    <td>1</td> <!--Gols-->
-                    <td>1</td> <!--Gols Sofridos-->
-                    <td>0</td> <!--Saldo de Gols-->
-                </tr>
-                <tr>
-                    <td>Tropa do ZL</td>
-                    <td class="pontos">3</td> <!--Pontos-->
-                    <td>1</td> <!--Jogos-->
-                    <td>0</td> <!--Vitorias-->
-                    <td>1</td> <!--Empates-->
-                    <td>0</td> <!--Derrotas-->
-                    <td>1</td> <!--Gols-->
-                    <td>1</td> <!--Gols Sofridos-->
-                    <td>0</td> <!--Saldo de Gols-->
-                </tr>
-                <tr>
-                    <td>Fla-lomão</td>
-                    <td class="pontos">2</td> <!--Pontos-->
-                    <td>1</td> <!--Jogos-->
-                    <td>0</td> <!--Vitorias-->
-                    <td>0</td> <!--Empates-->
-                    <td>1</td> <!--Derrotas-->
-                    <td>1</td> <!--Gols-->
-                    <td>2</td> <!--Gols Sofridos-->
-                    <td>-1</td> <!--Saldo de Gols-->
-                </tr>
-                <tr>
-                    <td>Guandu</td>
-                    <td class="pontos">0</td> <!--Pontos-->
-                    <td>1</td> <!--Jogos-->
-                    <td>0</td> <!--Vitorias-->
-                    <td>0</td> <!--Empates-->
-                    <td>1</td> <!--Derrotas-->
-                    <td>0</td> <!--Gols-->
-                    <td>1</td> <!--Gols Sofridos-->
-                    <td>-1</td> <!--Saldo de Gols-->
-                </tr>
-            </tbody>
-        </table>
-
-        <h1>Jogos</h1>
-
-        <hr>
-
-        <div id="primeira-rodada"> <!--Primeira Rodada-->
-            <div class="rodadas">
-                <span class="seta-esquerda" onclick="clickEsquerdaUm()"> << </span> 
-                <p id="rodada1">1° Rodada</p> 
-                <span class="seta-direita" onclick="clickDireitaUm()"> >> </span>
-            </div>
-
-            <div class="linha"></div>
-        
-        
-
-            <div class="estilos">
-
-                <div class="time-left">
-                    <span class="time">MLN</span>
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span> 
-                </div>
-
-                <div class="placar-meio">
-                    <span>1 x 1</span>
-                </div>
-
-                <div class="time-right">
-                    <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span> 
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="time">TZL</span>
-                </div>
-
-            </div> <!--Estilos -->
-
-            <div class="estilos">
-
-                <div class="time-left">
-                    <span class="time">TDU</span>
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span> 
-                </div>
-
-                <div class="placar-meio">
-                    <span>2 x 1</span>
-                </div>
-
-                <div class="time-right">
-                    <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span> 
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="time">FLA</span>
-                </div>
-            </div> <!-- Estilos -->
-
-            <div class="estilos">
-
-                <div class="time-left">
-                    <span class="time">QUF</span>
-                    <span class="img-span"><img src="imagens/quafa-logo.png" alt=""></span>
-                    <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span> 
-                </div>
-
-                <div class="placar-meio">
-                    <span>1 x 0</span>
-                </div>
-
-                <div class="time-right">
-                    <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span> 
-                    <span class="img-span"><img src="imagens/logo-guandu.png" alt=""></span>
-                    <span class="time">GND</span>
-                </div>
-            </div> <!-- Estilos -->
-
-        </div> <!-- primeira-rodada -->
-
-
-        <div id="segunda-rodada"> <!--segunda Rodada-->
-           
-            <div class="rodadas">
-                <span class="seta-esquerda" onclick="clickEsquerdaDois()"> << </span> 
-                <p id="rodada2"><!--Numero Rodadas--></p> 
-                <span class="seta-direita" onclick="clickDireitaDois()"> >> </span>
-            </div>
-            
-            <div class="linha"></div>
-
-            <div class="estilos">
-
-                <div class="time-left">
-                    <span class="time">EXM</span>
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span> 
-                </div>
-
-                <div class="placar-meio">
-                    <span>0 x 0</span>
-                </div>
-
-                <div class="time-right">
-                    <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span> 
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="time">EXM</span>
-                </div>
-
-            </div> <!--Estilos -->
-
-            <div class="estilos">
-
-                <div class="time-left">
-                    <span class="time">EXM</span>
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span> 
-                </div>
-
-                <div class="placar-meio">
-                    <span>0 x 0</span>
-                </div>
-
-                <div class="time-right">
-                    <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span> 
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="time">EXM</span>
-                </div>
-            </div> <!-- Estilos -->
-
-            <div class="estilos">
-
-                <div class="time-left">
-                    <span class="time">EXM</span>
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span> 
-                </div>
-
-                <div class="placar-meio">
-                    <span>0 x 0</span>
-                </div>
-
-                <div class="time-right">
-                    <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span> 
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="time">EXM</span>
-                </div>
-            </div> <!-- Estilos -->
-
-        </div> <!-- Segunda-rodada -->
-
-        <div id="terceira-rodada"> <!--terceira Rodada-->
-           
-            <div class="rodadas">
-                <span class="seta-esquerda" onclick="clickEsquerdaTres()"> << </span> 
-                <p id="rodada3"><!--Numero Rodadas--></p> 
-                <span class="seta-direita" onclick="clickDireitaTres()"> >> </span>
-            </div>
-            
-            <div class="linha"></div>
-
-            <div class="estilos">
-
-                <div class="time-left">
-                    <span class="time">EXM</span>
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span> 
-                </div>
-
-                <div class="placar-meio">
-                    <span>0 x 0</span>
-                </div>
-
-                <div class="time-right">
-                    <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span> 
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="time">EXM</span>
-                </div>
-
-            </div> <!--Estilos -->
-
-            <div class="estilos">
-
-                <div class="time-left">
-                    <span class="time">EXM</span>
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span> 
-                </div>
-
-                <div class="placar-meio">
-                    <span>0 x 0</span>
-                </div>
-
-                <div class="time-right">
-                    <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span> 
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="time">EXM</span>
-                </div>
-            </div> <!-- Estilos -->
-
-            <div class="estilos">
-
-                <div class="time-left">
-                    <span class="time">EXM</span>
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span> 
-                </div>
-
-                <div class="placar-meio">
-                    <span>0 x 0</span>
-                </div>
-
-                <div class="time-right">
-                    <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span> 
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="time">EXM</span>
-                </div>
-            </div> <!-- Estilos -->
-
-        </div> <!-- terceira-rodada -->
-
-        <div id="quarta-rodada"> <!--quarta Rodada-->
-           
-            <div class="rodadas">
-                <span class="seta-esquerda" onclick="clickEsquerdaQuatro()"> << </span> 
-                <p id="rodada4"><!--Numero Rodadas--></p> 
-                <span class="seta-direita" onclick="clickDireitaQuatro()"> >> </span>
-            </div>
-            
-            <div class="linha"></div>
-
-            <div class="estilos">
-
-                <div class="time-left">
-                    <span class="time">EXM</span>
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span> 
-                </div>
-
-                <div class="placar-meio">
-                    <span>0 x 0</span>
-                </div>
-
-                <div class="time-right">
-                    <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span> 
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="time">EXM</span>
-                </div>
-
-            </div> <!--Estilos -->
-
-            <div class="estilos">
-
-                <div class="time-left">
-                    <span class="time">EXM</span>
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span> 
-                </div>
-
-                <div class="placar-meio">
-                    <span>0 x 0</span>
-                </div>
-
-                <div class="time-right">
-                    <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span> 
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="time">EXM</span>
-                </div>
-            </div> <!-- Estilos -->
-
-            <div class="estilos">
-
-                <div class="time-left">
-                    <span class="time">EXM</span>
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span> 
-                </div>
-
-                <div class="placar-meio">
-                    <span>0 x 0</span>
-                </div>
-
-                <div class="time-right">
-                    <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span> 
-                    <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
-                    <span class="time">EXM</span>
-                </div>
-            </div> <!-- Estilos -->
-
-        </div> <!-- quarta-rodada -->
-
-
-        <div class="presente-ou-nao">
-            <span class="material-symbols-outlined simbolo-check">check_circle</span> 
-            <p>Presente no Encontro Jovem</p> 
-            <br>
-            <span class="material-symbols-outlined simbolo-cancel">cancel</span> 
-            <p>Não esteve presente no Encontro Jovem</p>
-        </div>
+        <section id="tabela-e-jogos"> <!-- tabela-e-jogos -->
+
+            <section id="tabela"> <!--Section Tablea-->
+
+                <h1>Tabela</h1>
+                <table>
+                    <colgroup>
+                        <col class="times">
+                        <col class="cinza">
+                        <col >
+                        <col class="cinza">
+                        <col >
+                        <col class="cinza">
+                        <col >
+                        <col class="cinza">
+                        <col >
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>TIMES</th>
+                            <th>P</th>
+                            <th>J</th>
+                            <th>V</th>
+                            <th>E</th>
+                            <th>D</th>
+                            <th>G</th>
+                            <th>GS</th>
+                            <th>SG</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tropa do Urso</td>
+                            <td class="pontos">5</td> <!--Pontos-->
+                            <td>1</td> <!--Jogos-->
+                            <td>1</td> <!--Vitorias-->
+                            <td>0</td> <!--Empates-->
+                            <td>0</td> <!--Derrotas-->
+                            <td>2</td> <!--Gols-->
+                            <td>1</td> <!--Gols Sofridos-->
+                            <td>1</td> <!--Saldo de Gols-->
+                        </tr>
+                        <tr>
+                            <td>Quafa</td>
+                            <td class="pontos">3</td> <!--Pontos-->
+                            <td>1</td> <!--Jogos-->
+                            <td>1</td> <!--Vitorias-->
+                            <td>0</td> <!--Empates-->
+                            <td>0</td> <!--Derrotas-->
+                            <td>1</td> <!--Gols-->
+                            <td>0</td> <!--Gols Sofridos-->
+                            <td>1</td> <!--Saldo de Gols-->
+                        </tr>
+                        <tr>
+                            <td>Milan</td>
+                            <td class="pontos">3</td> <!--Pontos-->
+                            <td>1</td> <!--Jogos-->
+                            <td>0</td> <!--Vitorias-->
+                            <td>1</td> <!--Empates-->
+                            <td>0</td> <!--Derrotas-->
+                            <td>1</td> <!--Gols-->
+                            <td>1</td> <!--Gols Sofridos-->
+                            <td>0</td> <!--Saldo de Gols-->
+                        </tr>
+                        <tr>
+                            <td>Tropa do ZL</td>
+                            <td class="pontos">3</td> <!--Pontos-->
+                            <td>1</td> <!--Jogos-->
+                            <td>0</td> <!--Vitorias-->
+                            <td>1</td> <!--Empates-->
+                            <td>0</td> <!--Derrotas-->
+                            <td>1</td> <!--Gols-->
+                            <td>1</td> <!--Gols Sofridos-->
+                            <td>0</td> <!--Saldo de Gols-->
+                        </tr>
+                        <tr>
+                            <td>Fla-lomão</td>
+                            <td class="pontos">2</td> <!--Pontos-->
+                            <td>1</td> <!--Jogos-->
+                            <td>0</td> <!--Vitorias-->
+                            <td>0</td> <!--Empates-->
+                            <td>1</td> <!--Derrotas-->
+                            <td>1</td> <!--Gols-->
+                            <td>2</td> <!--Gols Sofridos-->
+                            <td>-1</td> <!--Saldo de Gols-->
+                        </tr>
+                        <tr>
+                            <td>Guandu</td>
+                            <td class="pontos">0</td> <!--Pontos-->
+                            <td>1</td> <!--Jogos-->
+                            <td>0</td> <!--Vitorias-->
+                            <td>0</td> <!--Empates-->
+                            <td>1</td> <!--Derrotas-->
+                            <td>0</td> <!--Gols-->
+                            <td>1</td> <!--Gols Sofridos-->
+                            <td>-1</td> <!--Saldo de Gols-->
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section> <!--Section-Tabela-->
 
+            <div class="linha-tabela-jogos"></div> <!-- Linha-Tabela-Jogos -->
+
+            <section id="jogos"> <!--Section- Jogos-->
+                <div id="primeira-rodada"> <!--Primeira Rodada-->
+                    <h1>Jogos</h1>
+
+                    <hr>
+
+                    <div class="rodadas">
+                        <span class="seta-esquerda" onclick="clickEsquerdaUm()"> << </span>
+                        <p id="rodada1">1° Rodada</p>
+                        <span class="seta-direita" onclick="clickDireitaUm()"> >> </span>
+                    </div>
+
+                    <div class="linha"></div>
+                
+                
+                    <div class="estilos">
+                        <div class="time-left">
+                            <span class="time">MLN</span>
+                            <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
+                            <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span>
+                        </div>
+
+                        <div class="placar-meio">
+                            <span>1 x 1</span>
+                        </div>
+
+                        <div class="time-right">
+                            <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span>
+                            <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
+                            <span class="time">TZL</span>
+                        </div>
+
+                    </div> <!--Estilos -->
+
+                    <div class="linha-jogos"></div> <!--Linha-Jogos-->
+
+                    <div class="estilos">
+                        <div class="time-left">
+                            <span class="time">TDU</span>
+                            <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
+                            <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span>
+                        </div>
+
+                        <div class="placar-meio">
+                            <span>2 x 1</span>
+                        </div>
+
+
+                        <div class="time-right">
+                            <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span>
+                            <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
+                            <span class="time">FLA</span>
+                        </div>
+                    </div> <!-- Estilos -->
+
+
+                    <div class="linha-jogos"></div> <!--Linha-Jogos-->
+
+
+                    <div class="estilos">
+                        <div class="time-left">
+                            <span class="time">QUF</span>
+                            <span class="img-span"><img src="imagens/quafa-logo.png" alt=""></span>
+                            <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span>
+                        </div>
+
+                        <div class="placar-meio">
+                            <span>1 x 0</span>
+                        </div>
+
+                        <div class="time-right">
+                            <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span>
+                            <span class="img-span"><img src="imagens/logo-guandu.png" alt=""></span>
+                            <span class="time">GND</span>
+                        </div>
+
+                    </div> <!-- Estilos -->
+
+
+                    <div class="linha linha-jogos-diff"></div>
+
+
+                    <div class="presente-ou-nao">
+                        <span class="material-symbols-outlined simbolo-check">check_circle</span>
+                        <p>Presente no Encontro Jovem</p>
+                        <br>
+                        <span class="material-symbols-outlined simbolo-cancel">cancel</span>
+                        <p>Não esteve presente no Encontro Jovem</p>
+                    </div>
+
+
+                </div> <!-- primeira-rodada -->
+
+                <div id="segunda-rodada"> <!--segunda Rodada-->
+                    <h1>Jogos</h1>
+
+                    <hr>
+
+                    <div class="rodadas">
+                        <span class="seta-esquerda" onclick="clickEsquerdaDois()"> << </span>
+                        <p id="rodada2"></p>
+                        <span class="seta-direita" onclick="clickDireitaDois()"> >> </span>
+                    </div>
+
+                    <div class="linha"></div>
+                
+                
+                    <div class="estilos">
+                        <div class="time-left">
+                            <span class="time">MLN</span>
+                            <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
+                            <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span>
+                        </div>
+
+                        <div class="placar-meio">
+                            <span>1 x 1</span>
+                        </div>
+
+                        <div class="time-right">
+                            <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span>
+                            <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
+                            <span class="time">TZL</span>
+                        </div>
+
+                    </div> <!--Estilos -->
+
+                    <div class="linha-jogos"></div> <!--Linha-Jogos-->
+
+                    <div class="estilos">
+                        <div class="time-left">
+                            <span class="time">TDU</span>
+                            <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
+                            <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span>
+                        </div>
+
+                        <div class="placar-meio">
+                            <span>2 x 1</span>
+                        </div>
+
+
+                        <div class="time-right">
+                            <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span>
+                            <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
+                            <span class="time">FLA</span>
+                        </div>
+                    </div> <!-- Estilos -->
+
+
+                    <div class="linha-jogos"></div> <!--Linha-Jogos-->
+
+
+                    <div class="estilos">
+                        <div class="time-left">
+                            <span class="time">QUF</span>
+                            <span class="img-span"><img src="imagens/quafa-logo.png" alt=""></span>
+                            <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span>
+                        </div>
+
+                        <div class="placar-meio">
+                            <span>1 x 0</span>
+                        </div>
+
+                        <div class="time-right">
+                            <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span>
+                            <span class="img-span"><img src="imagens/logo-guandu.png" alt=""></span>
+                            <span class="time">GND</span>
+                        </div>
+
+                    </div> <!-- Estilos -->
+
+
+                    <div class="linha linha-jogos-diff"></div>
+
+
+                    <div class="presente-ou-nao">
+                        <span class="material-symbols-outlined simbolo-check">check_circle</span>
+                        <p>Presente no Encontro Jovem</p>
+                        <br>
+                        <span class="material-symbols-outlined simbolo-cancel">cancel</span>
+                        <p>Não esteve presente no Encontro Jovem</p>
+                    </div>
+
+
+                </div> <!-- segunda-rodada -->
+
+                <div id="terceira-rodada"> <!--Terceira Rodada-->
+                    <h1>Jogos</h1>
+
+                    <hr>
+
+                    <div class="rodadas">
+                        <span class="seta-esquerda" onclick="clickEsquerdaTres()"> << </span>
+                        <p id="rodada3"></p>
+                        <span class="seta-direita" onclick="clickDireitaTres()"> >> </span>
+                    </div>
+
+                    <div class="linha"></div>
+                
+                
+                    <div class="estilos">
+                        <div class="time-left">
+                            <span class="time">MLN</span>
+                            <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
+                            <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span>
+                        </div>
+
+                        <div class="placar-meio">
+                            <span>1 x 1</span>
+                        </div>
+
+                        <div class="time-right">
+                            <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span>
+                            <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
+                            <span class="time">TZL</span>
+                        </div>
+
+                    </div> <!--Estilos -->
+
+                    <div class="linha-jogos"></div> <!--Linha-Jogos-->
+
+                    <div class="estilos">
+                        <div class="time-left">
+                            <span class="time">TDU</span>
+                            <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
+                            <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span>
+                        </div>
+
+                        <div class="placar-meio">
+                            <span>2 x 1</span>
+                        </div>
+
+
+                        <div class="time-right">
+                            <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span>
+                            <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
+                            <span class="time">FLA</span>
+                        </div>
+                    </div> <!-- Estilos -->
+
+
+                    <div class="linha-jogos"></div> <!--Linha-Jogos-->
+
+
+                    <div class="estilos">
+                        <div class="time-left">
+                            <span class="time">QUF</span>
+                            <span class="img-span"><img src="imagens/quafa-logo.png" alt=""></span>
+                            <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span>
+                        </div>
+
+                        <div class="placar-meio">
+                            <span>1 x 0</span>
+                        </div>
+
+                        <div class="time-right">
+                            <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span>
+                            <span class="img-span"><img src="imagens/logo-guandu.png" alt=""></span>
+                            <span class="time">GND</span>
+                        </div>
+
+                    </div> <!-- Estilos -->
+
+
+                    <div class="linha linha-jogos-diff"></div>
+
+
+                    <div class="presente-ou-nao">
+                        <span class="material-symbols-outlined simbolo-check">check_circle</span>
+                        <p>Presente no Encontro Jovem</p>
+                        <br>
+                        <span class="material-symbols-outlined simbolo-cancel">cancel</span>
+                        <p>Não esteve presente no Encontro Jovem</p>
+                    </div>
+
+
+                </div> <!-- terceira-rodada -->
+
+                <div id="quarta-rodada"> <!--Quarta Rodada-->
+                    <h1>Jogos</h1>
+
+                    <hr>
+
+                    <div class="rodadas">
+                        <span class="seta-esquerda" onclick="clickEsquerdaQuatro()"> << </span>
+                        <p id="rodada4"></p>
+                        <span class="seta-direita" onclick="clickDireitaQuatro()"> >> </span>
+                    </div>
+
+                    <div class="linha"></div>
+                
+                
+                    <div class="estilos">
+                        <div class="time-left">
+                            <span class="time">MLN</span>
+                            <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
+                            <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span>
+                        </div>
+
+                        <div class="placar-meio">
+                            <span>1 x 1</span>
+                        </div>
+
+                        <div class="time-right">
+                            <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span>
+                            <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
+                            <span class="time">TZL</span>
+                        </div>
+
+                    </div> <!--Estilos -->
+
+                    <div class="linha-jogos"></div> <!--Linha-Jogos-->
+
+                    <div class="estilos">
+                        <div class="time-left">
+                            <span class="time">TDU</span>
+                            <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
+                            <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span>
+                        </div>
+
+                        <div class="placar-meio">
+                            <span>2 x 1</span>
+                        </div>
+
+
+                        <div class="time-right">
+                            <span class="material-symbols-outlined simbolo-check simbolo">check_circle</span>
+                            <span class="img-span"><img class="logo-exemplo" src="imagens/logo-time-exemplo.png" alt=""></span>
+                            <span class="time">FLA</span>
+                        </div>
+                    </div> <!-- Estilos -->
+
+
+                    <div class="linha-jogos"></div> <!--Linha-Jogos-->
+
+
+                    <div class="estilos">
+                        <div class="time-left">
+                            <span class="time">QUF</span>
+                            <span class="img-span"><img src="imagens/quafa-logo.png" alt=""></span>
+                            <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span>
+                        </div>
+
+                        <div class="placar-meio">
+                            <span>1 x 0</span>
+                        </div>
+
+                        <div class="time-right">
+                            <span class="material-symbols-outlined simbolo-cancel simbolo">cancel</span>
+                            <span class="img-span"><img src="imagens/logo-guandu.png" alt=""></span>
+                            <span class="time">GND</span>
+                        </div>
+
+                    </div> <!-- Estilos -->
+
+
+                    <div class="linha linha-jogos-diff"></div>
+
+
+                    <div class="presente-ou-nao">
+                        <span class="material-symbols-outlined simbolo-check">check_circle</span>
+                        <p>Presente no Encontro Jovem</p>
+                        <br>
+                        <span class="material-symbols-outlined simbolo-cancel">cancel</span>
+                        <p>Não esteve presente no Encontro Jovem</p>
+                    </div>
+
+
+                </div> <!-- quarta-rodada -->
+
+            </section> <!--Section-Jogos-->
+
+        </section> <!-- tabela-e-jogos -->
+
+
+        <section id="artilheiros"> <!--artilheiros-->
             <h1>Artilheiros</h1>
             <div class="artilheiros">
                 <p>RANKING</p>
                 <p>GOLS</p>
-            </div>
-        <iframe src="artilheiros.html" id="tela" frameborder="0"></iframe>
+                </div>
+            <iframe src="artilheiros.html" id="tela" frameborder="0"></iframe>
+        </section>                  <!--artilheiros-->
 
     </main>
 
     <footer>
         <a href="https://www.instagram.com/fjurealengorj/" target="_blank"><img src="imagens/FJU UNIVERSAL.png" alt="fju"></a>
     </footer>
-    <!--AAAAAAAAAAAAAAAAAAAA-->
 
     <script src="codigo/script.js"></script>
 
